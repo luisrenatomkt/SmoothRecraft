@@ -1,0 +1,11 @@
+[
+  {
+    "modid": "smoothrecraft",
+    "name": "Smooth Recraft",
+    "description": "Processa os cliques da GUI de containers a cada frame (e nao a cada tick de 50 ms), reduzindo a latencia de entrada no recraft. Totalmente manual: sem macros, sem autoclick.",
+    "version": "1.0.0",
+    "mcversion": "1.8.9",
+    "authorList": ["Smooth Recraft"],
+    "useDependencyInformation": false
+  }
+]
