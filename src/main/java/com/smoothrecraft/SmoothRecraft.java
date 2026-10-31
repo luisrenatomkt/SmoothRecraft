@@ -29,8 +29,10 @@ public class SmoothRecraft {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         FMLCommonHandler.instance().bus().register(new FrameInputHandler());
+        FMLCommonHandler.instance().bus().register(new WorldFreezeHandler());
         ClientCommandHandler.instance.registerCommand(new SmoothRecraftCommand());
-        FMLLog.info("[%s] Carregado. Processamento de entrada por frame: %s",
-                NAME, SRConfig.enabled ? "ATIVADO" : "desativado");
+        FMLLog.info("[%s] Carregado. Entrada por frame: %s | Congelar mundo: %s",
+                NAME, SRConfig.enabled ? "ATIVADO" : "desativado",
+                SRConfig.freezeWorld ? "ATIVADO" : "desativado");
     }
 }
